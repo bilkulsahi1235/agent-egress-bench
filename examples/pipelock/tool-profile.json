@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "tool": "pipelock",
+  "tool_version": "0.3.6",
+  "runner_version": "v1",
+  "claims": [
+    "url_dlp",
+    "request_body_dlp",
+    "header_dlp",
+    "response_injection",
+    "mcp_input_scan",
+    "mcp_tool_poison",
+    "mcp_chain",
+    "ssrf",
+    "domain_blocklist",
+    "entropy",
+    "encoding_evasion"
+  ],
+  "supports": {
+    "fetch_proxy": true,
+    "http_proxy": true,
+    "mcp_stdio": true,
+    "mcp_http": true,
+    "websocket": true,
+    "tls_interception": true,
+    "request_body_scanning": true,
+    "header_scanning": true,
+    "response_scanning": true,
+    "mcp_tool_baseline": true,
+    "mcp_chain_memory": true
+  }
+}

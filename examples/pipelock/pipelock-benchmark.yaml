@@ -1,0 +1,49 @@
+# Pipelock benchmark config: all scanners enabled, actions set to block.
+# This tests capability, not default UX tradeoffs.
+
+mode: strict
+
+enforce:
+  action: block
+
+fetch_proxy:
+  enabled: true
+  monitoring:
+    max_req_per_minute: 0  # disable rate limiting for benchmarks
+
+forward_proxy:
+  enabled: true
+
+dlp:
+  action: block
+  scan_body: true
+  body_max_size: 1048576
+  scan_headers: true
+  scan_env: false
+
+response_scanning:
+  enabled: true
+  action: block
+
+mcp_input_scanning:
+  enabled: true
+  action: block
+
+mcp_tool_scanning:
+  enabled: true
+  action: block
+
+mcp_tool_policy:
+  enabled: true
+  default_action: allow
+
+mcp_session_binding:
+  enabled: true
+  action: block
+
+tool_chain_detection:
+  enabled: true
+  action: block
+
+logging:
+  level: warn
