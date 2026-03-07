@@ -1,0 +1,11 @@
+# Agent Egress Bench is a security test corpus for benchmarking
+# AI agent firewall DLP detection. The cases/ directory contains
+# intentionally fake secrets (synthetic keys, dummy tokens,
+# placeholder credentials) as test payloads.
+#
+# Only cases/ is excluded. All other directories (validate/,
+# examples/, docs/, schemas/, .github/) are fully scanned.
+# No real credentials exist anywhere in this repository.
+
+paths-ignore:
+  - "cases/**"
