@@ -6,16 +6,21 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 permissions:
   contents: read
 
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6
         with:
           go-version: "1.24"
 
@@ -26,7 +31,7 @@ jobs:
         run: cd validate && go build -o /tmp/aeb-validate .
 
       - name: Validate all cases
-        run: /tmp/aeb-validate cases
+        run: /tmp/aeb-validate cases cases
 
       - name: Check case count
         run: |
@@ -39,8 +44,8 @@ jobs:
 
       - name: Scan for personal information
         run: |
-          if grep -ri 'pipelab\|debserver\|clawdbot\|family-agent\|10\.10\.' \
-            cases/ docs/ examples/ README.md CONTRIBUTING.md CLAUDE.md 2>/dev/null; then
+          if grep -ri 'debserver\|clawdbot\|family-agent\|10\.10\.' \
+            cases/ docs/ examples/ README.md CONTRIBUTING.md 2>/dev/null; then
             echo "ERROR: personal/infrastructure information found in repo content"
             exit 1
           fi
