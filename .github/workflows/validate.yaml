@@ -31,7 +31,7 @@ jobs:
         run: cd validate && go build -o /tmp/aeb-validate .
 
       - name: Validate all cases
-        run: /tmp/aeb-validate cases
+        run: /tmp/aeb-validate cases cases
 
       - name: Check case count
         run: |
